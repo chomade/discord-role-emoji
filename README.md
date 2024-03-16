@@ -48,3 +48,4 @@ This is a simple bot that allows you to assign roles to users by reacting to a m
 - `!설정` : Make a message to add a role
 
 ## License
+Licensed under the [GNU General Public License v3.0](LICENSE)
