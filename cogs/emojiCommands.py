@@ -20,9 +20,8 @@ class Emoji(commands.Cog):
     @commands.has_permissions(administrator=True)
     @commands.hybrid_command(name="설정", description="settings")
     async def settings(self, interaction: discord.Interaction):
-        embed = discord.Embed(description="asdf.", color=discord.Color.blurple())
+        embed = discord.Embed(description="역할을 선택하세요.", color=discord.Color.blurple())
         text = await interaction.channel.send(embed=embed)
-        # 기본 이모지 (http://xahlee.info/comp/unicode_emoji.html)
         for i in self.default_emojis:
             await text.add_reaction(i['emoji'])
 

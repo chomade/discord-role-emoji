@@ -19,7 +19,6 @@ initial_extensions = ['cogs.emojiCommands']
 
 @bot.event
 async def on_ready():
-    print(1)
     for extension in initial_extensions:
         try:
             await bot.load_extension(extension)
@@ -27,8 +26,7 @@ async def on_ready():
         except Exception as e:
             print(f"Failed to load extension {extension}. Caused py {e}.", file=sys.stderr)
             traceback.print_exc()
-    print(2)
-    print(3)
+    await bot.tree.sync()
     print("Bot is ready!")
 
 
