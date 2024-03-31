@@ -14,7 +14,7 @@ This is a simple bot that allows you to assign roles to users by reacting to a m
 2. Install the required packages with `pip install -r requirements.txt`
 3. Create a `.env` file in the root directory and add the following:
    ```
-   TOKEN='your_token'
+   TOKEN='your_discord_token'
    ```
 4. Change the `defaultEmoji.json` file to the emoji you want to use
     ```json
